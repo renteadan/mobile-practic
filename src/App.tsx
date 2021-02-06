@@ -21,6 +21,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Professor from './pages/Professor';
+import Student from './pages/Student';
 
 const App: React.FC = () => (
   <IonApp>
@@ -28,6 +30,12 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         <Route exact path="/home">
           <Home />
+        </Route>
+         <Route exact path="/professor">
+          <Professor />
+        </Route>
+        <Route exact path="/student">
+          <Student />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
